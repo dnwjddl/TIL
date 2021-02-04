@@ -44,6 +44,8 @@
 
 [GITHUB API](https://github.com/sahat/hackathon-starter)  
 
+[API 뷔페](ainize.ai/explore)
+
 ### API 사용하는 방법
 #### REST API
 - REST API는 POST/GET/PUT/DELETE 등 HTTP 메소드를 이용해서 호출 (GET, POST 쓰는 경우가 대부분)
@@ -52,5 +54,27 @@
   - Browser에서 해당 주소를 입력하면 GET으로 요청됨
 - POST
   - 사진과 같이 파일을 요청에 함께 보내거나, 발급받은 사용키(API-Key)를 같이 보내야 한다면 보통 POST 요청으로 보냄
-  - **```Postman```** 사용하여 Post 사용가능
+  - **```Postman```** 사용하여 Post 사용가능 (실험해보는 과정)
+
+## 서비스에서 API 호출하기
+  - Networking 관련 library에서 REST API는 거의다 지원함
+    - Android: Retrofit2, OkHttp
+    - iOS: Alamofire, AFNetworking
+    - JavaScript: Axios
+  - 일반적으로 API를 호출하고 받는 Response format으로 JSON을 많이 씀
+    - 적절한 JSON Parser Library를 찾아 붙입시다
+      - ex. Android라면 Retrofit2 + Gson
+## API 찾는 법
+- IT 회사의 개발자 사이트
+  - 국내: NAVER, Kakao등 
+    - 베스트 셀러 위주, 보통 신용카드 요구 안함
+  - 해외: Google, AWS, Azure등
+    - 베스트 셀러 위주, 보통 신용카드 요구함
+- API Marketplace
+  - ainize.ai(opensource 기반)
+  - RapidAPI(상용 API 기반)
+- 공공 데이터 포털
+  - 공공데이터 포털ainize.ai(OpenSource기반)
+  - 서울시 열린 데이터 광장 
+  - 따릉이
   
