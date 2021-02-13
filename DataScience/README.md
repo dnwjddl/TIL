@@ -1,7 +1,7 @@
 #### [[1] 데이터과학](https://github.com/dnwjddl/TIL/blob/master/DataScience/%5B1%5D%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B3%BC%ED%95%99.ipynb)
 #### [[2] 파이썬](https://github.com/dnwjddl/TIL/blob/master/DataScience/%5B2%5D%20python.ipynb)
 #### [[3] 데이터 시각화](https://github.com/dnwjddl/TIL/blob/master/DataScience/%5B3%5D%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%8B%9C%EA%B0%81%ED%99%94.ipynb)
-#### [4] 선형대수
+#### [[4] 선형대수](https://github.com/dnwjddl/TIL/blob/master/DataScience/%5B4%5D%20%EC%84%A0%ED%98%95%EB%8C%80%EC%88%98.ipynb)
 #### [5] 통계
 #### [6] 확률
 #### [7] 가설과 추론
