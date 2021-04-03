@@ -11,5 +11,7 @@
 ## 의사결정나무, Random Forest, Support Vector Machine
 ## Boosting, Clustering, Principal Component
 ## 비선형 패턴, Kernel PCA
+## Clustering: K-means, RMF 분석, DBSCAN 알고리즘
+## CF-based MF-based, Point-wise
 
 https://drive.google.com/drive/u/0/folders/1gzQKyxgpNmMSxT6-_q7Wa2LEAwzCoI5o
