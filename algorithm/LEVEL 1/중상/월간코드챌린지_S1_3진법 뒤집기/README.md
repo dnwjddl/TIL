@@ -21,3 +21,14 @@ def solution(n):
     return int(num, 3)
 ```
 
+- ```divmod```
+```python
+(7//3, 7%3) = divmod(7,3)
+
+a, b = divmod(n, m)
+```
+- ```int(x, base)``` (진법 변환 지원)
+base 진법으로 구성된 str형식의 수를 10진법으로 변환
+```python
+answer = int(answer, 3)
+```
