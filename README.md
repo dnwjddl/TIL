@@ -116,4 +116,58 @@ dataloader = {'train': torch.utils.data.DataLoader(train_ds, batch_size = BSZ, s
 train(dataloader['train'], checkpoint_path)
 test(dataloader['test'], checkpoint_path)
 ```
-  
+### Keras version  
+**Custom data generator**을 만들때는 ```keras.utils.Sequence```클래스를 상속  
+Sequence는 __getitem__, __len__, on_epoch_end, __iter__를 sub method로 가짐  
+
+```python
+from tensorflow.keras.utils import Sequence
+class DataLoader(Sequence):
+  def __init__(self, datalist, batch_size, dim, n_channels):
+    super(DataLoader, self).__init__()
+    self.data_list = np.array_list(data_list, len(data_list)//batch_size)
+    ...
+    
+  def on_epoch_end(self):
+    self.indexes == np.arange(len(self.X))
+    if self.shuffle:
+      np.random.shuffle(self.indexes)
+      
+   def __len__(self):
+     return len(self.data_list)
+     
+   def __getitem__(self, index):
+      return self.data_list[index]
+ 
+ if __name__ == "__main__":
+    model = Model()
+    data_list = getDataList()
+    batch_size = 16
+    
+    data_loader = DataLoader(data_list, batch_size)
+    model.fit(data_loader)
+```
+```python
+from keras_dataloader.dataloader import DataGenerator
+from keras_dataloader.dataset import Dataset
+
+
+class TensorDataset(Dataset):
+
+    def __getitem__(self, index):
+        # time.sleep(np.random.randint(1, 3))
+        return np.random.rand(3), np.array([index])
+
+    def __len__(self):
+        return 100
+        
+model = Sequential()
+model.add(Dense(units=4, input_dim=3))
+model.add(Dense(units=1))
+model.compile('adam', loss='mse')
+
+data_loader = DataGenerator(TensorDataset(), batch_size=20, num_workers=0)
+
+model.fit_generator(generator=data_loader, epochs=1, verbose=1)
+```
+https://github.com/GlassyWing/keras_dataloader
