@@ -26,6 +26,11 @@ def solution(arr, divisor):
 def solution(arr, divisor): 
   return sorted([n for n in arr if n%divisor == 0]) or [-1]
 ```
+### 오답
+
 list sort할때  
 - list.sort() # 이거 자체는 NULL 값
 - sorted(list) # 이건 list가 됨
+
+- 차피 list로 출력할거 안에다가 명령문 넣어도 될듯
+- ```or```활용
