@@ -10,3 +10,22 @@ divisor로 나누어 떨어지는 element가 하나도 없다면 배열에 -1을
 - divisor는 자연수입니다.
 - array는 길이 1 이상인 배열입니다.
 
+```python
+# 보잘 것 없는 나의 코드
+def solution(arr, divisor):
+    answer = []
+    for i in arr:
+        if i%divisor == 0:
+            answer.append(i)
+    if len(answer) == 0:
+        answer.append(-1)
+    answer.sort()
+    return answer
+    
+# 갓 한줄..
+def solution(arr, divisor): 
+  return sorted([n for n in arr if n%divisor == 0]) or [-1]
+```
+list sort할때  
+- list.sort() # 이거 자체는 NULL 값
+- sorted(list) # 이건 list가 됨
