@@ -21,3 +21,7 @@ base 진법으로 구성된 str형식의 수를 10진법으로 변환
 ```python
 answer = int(answer, 3)
 ```
+
+중복 싫으면 ```set``` :단, sort도 됨  
+sort하고 싶을때, sort(list)하지만 sorted(list)도 가능  
+```min(a,b)```, ```max(a,b)```,```sum(range(a,b))```함수들도 기억하기
