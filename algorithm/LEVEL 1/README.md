@@ -23,5 +23,5 @@ answer = int(answer, 3)
 ```
 
 중복 싫으면 ```set``` :단, sort도 됨  
-sort하고 싶을때, sort(list)하지만 sorted(list)도 가능  
+sort하고 싶을때, sort(list)하지만(type이 다른거 나옴) sorted(list, reverse = True, key = 'person')도 가능  
 ```min(a,b)```, ```max(a,b)```,```sum(range(a,b))```함수들도 기억하기
