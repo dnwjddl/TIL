@@ -116,7 +116,7 @@ dataloader = {'train': torch.utils.data.DataLoader(train_ds, batch_size = BSZ, s
 train(dataloader['train'], checkpoint_path)
 test(dataloader['test'], checkpoint_path)
 ```
-### Keras version  
+### Keras version    
 **Custom data generator**을 만들때는 ```keras.utils.Sequence```클래스를 상속  
 Sequence는 __getitem__, __len__, on_epoch_end, __iter__를 sub method로 가짐  
 
