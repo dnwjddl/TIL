@@ -8,3 +8,13 @@ False면 absolutes를 빼줌
 |---------|------|-----|
 |[4, 7, 12]|[true, false, true]|9|
 |[1,2,3]|[false, false, true]|0|
+
+
+```python
+def solution(absolutes, signs): 
+  return sum(absolutes[i] * (1 if signs[i] else -1) for i in range(len(signs)))
+  
+# 어차피 True면 if가 성립됨
+def solution(absolutes, signs):
+    return sum(absolutes if sign else -absolutes for absolutes, sign in zip(absolutes, signs))
+```
