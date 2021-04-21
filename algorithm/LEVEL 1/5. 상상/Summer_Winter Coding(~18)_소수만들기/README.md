@@ -6,3 +6,20 @@
 |----|-----|
 |[1,2,3,4]|1|
 |[1,2,7,6,4]|4|
+
+### 1번. list에서 세개의 숫자만 뽑아서 합치기
+```python
+from itertools import combinations
+# arr에 3개의 요소끼리 합칠 수 있음
+arr = list(combinations(nums, 3)
+```
+
+
+### 2번. 합친 숫자가 소수인지 확인하기
+```python
+def is_prime_number(x):
+  for i in range(2, x):
+    if x & i == 0:
+      return False
+  return True
+```
