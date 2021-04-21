@@ -27,3 +27,10 @@ answer = int(answer, 3)
 
 - sort 하고 싶을 때  
 sort하고 싶을때, list.sort()도 되지만, 본체 리스트를 정렬해서 변환 심지어 데이터타입이 리스트도 아님 sorted(list, reverse = True, key = 'person')도 가능  
+
+- ```combinations``` 함수
+combinations를 이욯해서 3개의 정수를 조합
+```python
+from itertools import combinations
+combination(nums, 3)
+```
