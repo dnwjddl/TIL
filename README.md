@@ -16,7 +16,7 @@ class Dataset(Dataset):
     with open(datalist) as f:
       self.datalist = f.readlines()
    
-   def __len__(self):
+   def __len__(self): 
      return len(self.datalist)
      
    def __getitem__(self, idx):
