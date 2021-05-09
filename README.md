@@ -1,7 +1,7 @@
 # TIL    
 Today I Learned     
    
-## DeepLearning
+## DeepLearning 
 ### Pytorch version
 
 ```python
