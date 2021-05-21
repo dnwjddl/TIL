@@ -118,7 +118,7 @@ test(dataloader['test'], checkpoint_path)
 ```
 ### Keras version    
 **Custom data generator**을 만들때는 ```keras.utils.Sequence```클래스를 상속   
-Sequence는 __getitem__, __len__, on_epoch_end, __iter__를 sub method로 가짐  
+Sequence는 __getitem__, __len__, on_epoch_end, __iter__를 sub method로 가짐   
 
 ```on_epoch_end```메소드는 각 epoch의 맨 처음과 맨 끝에 실행
 [keras Datagenerator](http://www.kwangsiklee.com/2018/11/keras%EC%97%90%EC%84%9C-sequence%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC-%EB%8C%80%EC%9A%A9%EB%9F%89-%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%85%8B-%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0/)
