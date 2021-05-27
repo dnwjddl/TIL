@@ -3,7 +3,7 @@ Today I Learned
 
 
 ## DeepLearning 
-### Pytorch version
+### Pytorch version  
 
 ```python
 # 1. Data Load
