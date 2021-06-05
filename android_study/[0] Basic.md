@@ -57,16 +57,24 @@ Tools > AVD Manager > Create Virtual Device > System Image select (Q가 기본) 
 -> ```AndroidManifest.xml``` 내에 모두 포함
 ```xml
 <application
-             android:allowBackup="true" // 이건 뭔지 모름
-             android:icon = "@mipmap/ic_launcher" // 앱 아이콘
+             android:allowBackup="true" //앱이 파괴되었을 때, 백업을 허용하냐 안하냐
+             android:icon = "@mipmap/ic_launcher" // 앱 아이콘 (여러개 중 핸드폰에 맞는걸 알아서 선택)
              android:label = "@string/app_name" //string.xml안에 있는 그 string 뜻하는듯 . 앱 이름
-             android:roundIcon = "@mipmap/ic_launcher_round" //앱 아이콘인데 동그란거
-             android:supportsRtl = "true" //이게 뭐냐
-             android:theme = "@style/AppTheme">
-    <activity android:name = ".MainActivity">
-      ..
-      ..
-      </application>
+             android:roundIcon = "@mipmap/ic_launcher_round" //앱 아이콘인데 동그란거 (이것도 알아서 선택)
+             android:supportsRtl = "true" //Right to Left로 해줌
+             android:theme = "@style/AppTheme"> //테마(색깔 입힘)
+  
+  //Java 내 Mainactivity 실행 
+    <activity android:name = ".MainActivity"> 
+        <intent-filter>
+           <action android:name="android.intent.action.MAIN"/> //Java 내 Mainactivity 실행 
+           <category android:name = "android.intent.category.LAUNCHER"/>
+        </intent-filter>
+    </activity>
+   
+</application>
+  
+  
 ```
 ```xml
 <?xml version = "1.0" encoding = "utf-8"?> // xml의 버전이랑, 한글 지원해줌
