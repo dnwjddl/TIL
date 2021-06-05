@@ -21,3 +21,47 @@ public class MainActivity extends AppCompatActivity{ //AppCompatActivity를 Main
 - ```onResume()```: 돌아옴
 - ```onStop()```:뒤로 가기등
 - ```onRestart()```: 아예 끄지않고 다시 실행하면 onRestart 후 onStart()로 이동
+- ```onDestroy()```: 너무 오랜시간 나가있으면 CPU에서 낭비라고 파괴시켜버림
+
+```java
+@Override
+protected void onCreate(Bundle savedInstanceState){
+  super.onCreate(savedInstanceState);
+  setContentView(R.layout.activity_main);
+}
+
+@Override
+protected void onStart(){
+  super.onStart();
+}
+
+@Override
+protected void onStop(){
+  super.onStop();
+}
+
+```
+
+### SubActivity
+```java
+//SubAcitivity class 생성
+
+public class SubAcitivity extends AppCompatAcivity{
+  @Override
+  protected void onCreate(Bundle savedInstanceState){
+    super.onCreate(savedInstanceState);
+  }
+}
+```
+이후 ```SubActivity```불러오는 법  
+
+```AndroidManifest.xml```에서
+
+```xml
+<application
+             ...
+             <activity android:name = ".SubActivity">
+              ...
+```
+
+- Nullable 지워줘도됨
