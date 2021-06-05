@@ -81,3 +81,4 @@ Tools > AVD Manager > Create Virtual Device > System Image select (Q가 기본) 
 <manifest xmlns:android="https://schemas.android.com/apk/res/android" package = "com.test.test28"> //패키지는 고유의 패키지(중복 안됨) 전부 소문자여야 함
 ```
 ### AndroidManifest.xml을 통해서 아래 모든 것 제어 가능
+
