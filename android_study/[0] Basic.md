@@ -20,6 +20,7 @@ Tools > AVD Manager > Create Virtual Device > System Image select (Q가 기본) 
 ## 구조
 - app 폴더 내
   - manifests
+    - ```AndroidManifest.xml```: 안드로이드 메니페스트는 다 합쳐주는 거같음 (환경 설정)
   - java
     - ```main activity```
     - (test)로 되어있는 애들은 볼 필요없음 지워도 됨
