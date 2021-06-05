@@ -34,8 +34,13 @@ Tools > AVD Manager > Create Virtual Device > System Image select (Q가 기본) 
       - ic_launcher: 그림 볼 수 있음
       - ic_launcher_round
     - values
-      - 주요 색깔 볼 수 있음
-      - 색깔 표현하는 단위
+      - colors.xml
+        - 주요 색깔 볼 수 있음
+        - 색깔 표현하는 단위
+      - strings.xml
+        - <string name = "app_name">Test28</string> 
+      - style.xml - color에서 연결해주는 애임
+        - <item name = "colorPrimary">@color/colorPrimary</item>
 
 ![image](https://user-images.githubusercontent.com/72767245/120889913-751a6900-c63a-11eb-8524-2cc4ee09bf03.png)
 
@@ -45,3 +50,20 @@ Tools > AVD Manager > Create Virtual Device > System Image select (Q가 기본) 
 - ```xml```파일 형식은 아무리 확대를 해도 픽셀이 뭉개지지 않음
 - Mipmap 내 IC_launcher의 XML은 drawable 내의 xml 합친 것
 
+
+---
+
+-> ```AndroidManifest.xml``` 내에 모두 포함
+```xml
+<application
+             android:allowBackup="true" // 이건 뭔지 모름
+             android:icon = "@mipmap/ic_launcher" // 앱 아이콘
+             android:label = "@string/app_name" //string.xml안에 있는 그 string 뜻하는듯 . 앱 이름
+             android:roundIcon = "@mipmap/ic_launcher_round" //앱 아이콘인데 동그란거
+             android:supportsRtl = "true" //이게 뭐냐
+             android:theme = "@style/AppTheme">
+    <activity android:name = ".MainActivity">
+      ..
+      ..
+      </application>
+```
