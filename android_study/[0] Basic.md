@@ -68,3 +68,8 @@ Tools > AVD Manager > Create Virtual Device > System Image select (Q가 기본) 
       ..
       </application>
 ```
+```xml
+<?xml version = "1.0" encoding = "utf-8"?> // xml의 버전이랑, 한글 지원해줌
+<manifest xmlns:android="https://schemas.android.com/apk/res/android" package = "com.test.test28"> //패키지는 고유의 패키지(중복 안됨) 전부 소문자여야 함
+```
+### AndroidManifest.xml을 통해서 아래 모든 것 제어 가능
