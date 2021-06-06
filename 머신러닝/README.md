@@ -14,10 +14,10 @@
     - numpy는 리스트가 아닌 배열로 각 원소별로 계산 가능
   - ```opencv```: open computer library  (동영상, 이미지 처리)
   - ```pandas```: R 언어의 DataFrame - 통계적인 계산에 유용
-     - ```df = pd.DataFrame(data = {id: col_id, 'Team': col_team})
-     - ```df.set_index('Id', inplace = True)
+     - ```df = pd.DataFrame(data = {id: col_id, 'Team': col_team})```
+     - ```df.set_index('Id', inplace = True)```
      - groupby라는 함수를 사용
-     - ```df.groupby('Team').mean()
+     - ```df.groupby('Team').mean()```
   - ```scikit-learn```: 머신러닝 알고리즘
   - ```seaborn```: 그림그리는 애 - 분석하는 것
   - ```tensorflow```: 딥러닝
