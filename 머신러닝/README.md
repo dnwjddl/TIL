@@ -13,13 +13,13 @@
   - ```numpy```: 숫자를 계산하기 위한 라이브러리
   - ```opencv```: open computer library  (동영상, 이미지 처리)
   - ```pandas```: R 언어의 DataFrame
-  - ```scikit-learn```:
-  - ```seaborn```:
+  - ```scikit-learn```: 머신러닝 알고리즘
+  - ```seaborn```: 그림그리는 애 - 분석하는 것
   - ```tensorflow```: 딥러닝
-  - ```theano```: 딥러닝
+  - ```theano```: 딥러닝 (요즘은 Tensorflow 씀)
   - ```torch```: 딥러닝
-  - ```xgboost```
-  - ```yellowbrick```
+  - ```xgboost```: 머신러닝 패키지
+  - ```yellowbrick```: 
 
 ## EDA 및 분류문제 (+SQL)
 ## EDA 및 회귀문제 (+ Prophet)
