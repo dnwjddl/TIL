@@ -18,8 +18,16 @@
      - ```df.set_index('Id', inplace = True)```
      - groupby라는 함수를 사용
      - ```df.groupby('Team').mean()```
+  - ```matplotlib```: 그림
+    - ```fig = plt.figure()```
+    - ```ax = fig.gca()```
+    - ```ax.plot(x, y, 'r-')```
+    - ```fig.show()```
   - ```scikit-learn```: 머신러닝 알고리즘
   - ```seaborn```: 그림그리는 애 - 분석하는 것
+    - ```import seaborn as sns```
+    - ```sns.histplot(x = 'Score', data = df)```
+    - ```sns.boxplot(y = 'Score', x = 'team', data = df)```
   - ```tensorflow```: 딥러닝
   - ```theano```: 딥러닝 (요즘은 Tensorflow 씀)
   - ```torch```: 딥러닝
