@@ -4,7 +4,22 @@
   - ```!python --version``` => ```python 3.6.9```
   - ```!pip list``` 하면 colab 내에 설치되어있는 파일들 확인 가능
     - deeplearning library: tensorflow[Google] & torch[Pytorch]
-    - Keras backend로 tensorflow 사용(theano 예전에 많이 쓰임) 
+    - Keras backend로 tensorflow 사용(theano 예전에 많이 쓰임)
+
+  - ```fbprophet```: facebook에서 만든것으로 시계열 데이터를 다루는데 사용되는 패키지
+  - ```kaggle```: 데이터셋 사용할때의 kaggle API
+  - ```keras```: 딥러닝 라이브러리 (Tensorflow 내)
+  - ```lightgbm```: 마이크로소프트에서 제공. ```xgboost```그라디언트 부스팅 패키지(머신러닝 패키지) 의 light 버전
+  - ```numpy```: 숫자를 계산하기 위한 라이브러리
+  - ```opencv```: open computer library  (동영상, 이미지 처리)
+  - ```pandas```: R 언어의 DataFrame
+  - ```scikit-learn```:
+  - ```seaborn```:
+  - ```tensorflow```: 딥러닝
+  - ```theano```: 딥러닝
+  - ```torch```: 딥러닝
+  - ```xgboost```
+  - ```yellowbrick```
 
 ## EDA 및 분류문제 (+SQL)
 ## EDA 및 회귀문제 (+ Prophet)
