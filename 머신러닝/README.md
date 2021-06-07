@@ -33,7 +33,18 @@
   - ```torch```: 딥러닝
   - ```xgboost```: 머신러닝 패키지
   - ```yellowbrick```: 
+### Kaggle
+- 본인의 고유 Kaggle Key 다운로드
+- 다운로드할 데이터의 ```Copy API command```
 
+```python
+import os
+os.environ['KAGGLE_USERNAME'] = 'fastcampus'
+os.environ['KAGGLE_KEY'] = 'c939a37~'
+
+!kaggle datasets download ~ // API command의 명령어
+
+```
 ## EDA 및 분류문제 (+SQL)
 ## EDA 및 회귀문제 (+ Prophet)
 ## 의사결정나무, Random Forest, Support Vector Machine
