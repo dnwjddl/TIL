@@ -45,6 +45,15 @@ os.environ['KAGGLE_KEY'] = 'c939a37~'
 !kaggle datasets download ~ // API command의 명령어
 
 ```
+
+### Data
+- Tabular (표로 되어있는 형태)
+- Image
+  - Still Image
+  - Video
+- Sequential
+  - Time-Series
+  - Sound
 ## EDA 및 분류문제 (+SQL)
 ## EDA 및 회귀문제 (+ Prophet)
 ## 의사결정나무, Random Forest, Support Vector Machine
