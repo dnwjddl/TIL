@@ -51,4 +51,4 @@ dependencies {
 
 ```MainActivity``` 에서는 카메라로부터 캡처된 이미지를 가공하여 바이너리 이미지로 변환  
 ```Classifier```에서 이미지로부터 숫자를 예측  
-```MainActivity``에서 예측된 숫자를 출력
+```MainActivity```에서 예측된 숫자를 출력
