@@ -40,3 +40,5 @@ public class SubAcitivity extends AppCompatAcitivity{
 ```
 
 >> 이러면 button1을 클릭하면 Btn1Click이라는게 실행돼서 "ㅋㅋ"가 Toast로 뜨게 된다
+
+```Toast```: 알림이 떴다가 사라지는 글씨
