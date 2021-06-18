@@ -42,3 +42,20 @@ public class SubAcitivity extends AppCompatAcitivity{
 >> 이러면 button1을 클릭하면 Btn1Click이라는게 실행돼서 "ㅋㅋ"가 Toast로 뜨게 된다
 
 ```Toast```: 알림이 떴다가 사라지는 글씨
+
+### 원하는 위치로 바꾸기
+#### 기존
+
+```java
+public void Btn1Click(View v){
+   Toast.makeText(this, "ㅋㅋ", Toast.LENGTH_SHORT).show();
+}
+```
+
+```java
+public void Btn1Click(View v){
+   Toast toast = Toast.makeText(this, "ㅋㅋ", Toast.LENGTH_SHORT); //객체 생성, LENGTH_SHORT: 빠르게 사라짐, LENTH_LONG: 길게 있다가 사라짐
+   toast.setGravity(Gravity.END | Gravity.BOTTOM, ```xOffset``:10, ```yOffset```:10); //x랑 y 정함(END, BOTTOM)
+   toast.show();
+}
+```
