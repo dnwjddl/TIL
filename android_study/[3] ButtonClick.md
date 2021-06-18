@@ -81,6 +81,10 @@ protected void onCreate(Bundle savedInstanceState){
 }
 ```
 
+- button은 View 보다 상위개념
+- ctrl+ space
+- import 안되어있을때 alt+enter
+
 
 ```java
 @Override
@@ -97,3 +101,5 @@ protected void onCreate(Bundle savedInstanceState){
     }
 }
 ```
+
+### Button3으로 MainActivity 넘어가기
