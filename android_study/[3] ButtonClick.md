@@ -52,10 +52,48 @@ public void Btn1Click(View v){
 }
 ```
 
+#### 바뀐 위치
 ```java
 public void Btn1Click(View v){
    Toast toast = Toast.makeText(this, "ㅋㅋ", Toast.LENGTH_SHORT); //객체 생성, LENGTH_SHORT: 빠르게 사라짐, LENTH_LONG: 길게 있다가 사라짐
    toast.setGravity(Gravity.END | Gravity.BOTTOM, ```xOffset``:10, ```yOffset```:10); //x랑 y 정함(END, BOTTOM)
    toast.show();
+}
+```
+
+### layout에서 xml로 Button 만들기
+```xml
+<Button
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:text="버튼2"
+   android:id="@+id/Btn2" />
+```
+
+```java
+@Override
+protected void onCreate(Bundle savedInstanceState){
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+    
+    View Btn2 = findViewById(R.id.Btn2); //View 형식으로 받게 됨
+    //id로 받아옴(id는 버튼에 부여함)
+}
+```
+
+
+```java
+@Override
+protected void onCreate(Bundle savedInstanceState){
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+    
+    Button Btn2 = findViewById(R.id.Btn2); //View 상위 Button
+    Btn2.setOnClickkListener(new View.OnClickListener(){
+           @Override
+           public void onClick(View view){
+                Log.d("태그", "값"); //값을 log로 print함
+           }
+    }
 }
 ```
