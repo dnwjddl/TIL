@@ -1,5 +1,5 @@
 # android_study
-android_study
+android_study 
 
 ### Empty Activity
 최소한의 구성요소만 포함된 레이아웃 파일 & 코드 파일 지원
