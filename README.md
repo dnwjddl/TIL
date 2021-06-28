@@ -174,3 +174,12 @@ data_loader = DataGenerator(TensorDataset(), batch_size=20, num_workers=0)
 model.fit_generator(generator=data_loader, epochs=1, verbose=1)
 ```
 https://github.com/GlassyWing/keras_dataloader
+
+
+## Computer Vision문제 
+- Object Detection & Recognition
+- Scene Understanding
+- 3D reconstruction
+- Tracking
+- Image/Video Restoration
+- Segmentation
