@@ -54,6 +54,15 @@ os.environ['KAGGLE_KEY'] = 'c939a37~'
 - Sequential
   - Time-Series
   - Sound
+
+### 데이터 분석
+- Data Processing
+- Exploratory Data Analysis (EDA)
+  - 데이터 특이점 찾기
+  - 데이터 쓸 수 있는지 확인 판단
+- Feature Engineering
+- Machine Learning
+
 ## EDA 및 분류문제 (+SQL)
 ## EDA 및 회귀문제 (+ Prophet)
 ## 의사결정나무, Random Forest, Support Vector Machine
