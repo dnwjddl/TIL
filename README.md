@@ -22,7 +22,7 @@ class Dataset(Dataset):
      
    def __getitem__(self, idx):
       item = self.datalist[idx].split(',')
-      ..
+      .. 
       
       return {'image': img, 
               'img_type': img_type,
