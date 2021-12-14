@@ -41,7 +41,7 @@ class model_CNN(nn.Module):
     ...
     return x
 
-# 4. Criterions
+# 4. Criterions 
 def cls_criterion(cls_pred, label):
   loss = nn.CrossEntropyLoss()
   return loss(cls_pred, label)
