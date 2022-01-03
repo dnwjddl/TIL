@@ -4,7 +4,7 @@ Today I Learned
 
 ## DeepLearning   
 ### Pytorch version  
-
+ 
 ```python
 # 1. Data Load
 data_dir = 'data'
