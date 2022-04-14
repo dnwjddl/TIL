@@ -24,7 +24,7 @@
 
 
 
-# Dataset Visualization 
+## Dataset Visualization 
 ```Attribution```이 단일 입력 이미지에 대한 컨볼루션 신경망의 에측 결과에 대한 설명을 제공  
 ```Dataset Visualization```은 데이터 상에 포함된 전체 이미지들에 대한 컨볼루션 신경망의 예측 결과의 일반적인 경향성에 대한 설명 제공
 
@@ -39,3 +39,12 @@
   - PCA(principal component analysis)
   - t-SNE(t-distributed stochastic neighbor embedding)
   - UMAP(uniform mainfold approximation and projection
+
+
+
+
+# Conclusion
+```Activation Visualization```  
+- 컨볼루션 신경망의 예측 결과에 대한 해석을 위한 가장 단순하고 직관적인 방법  
+- **Feature map을 직접 이미지 형태로 시각화**
+- (-) 늘 한 번에 많은 수의 Feature map들을 동시에 관찰하면서 각각이 커버하는 시각적 특징이 무엇인지 추정해야 한다는 단점
