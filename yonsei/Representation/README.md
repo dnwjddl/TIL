@@ -44,7 +44,8 @@
 
 
 # Conclusion
-**```Activation Visualization``` ** 
+
+**```Activation Visualization```**
 - 컨볼루션 신경망의 예측 결과에 대한 해석을 위한 가장 단순하고 직관적인 방법  
 - **Feature map을 직접 이미지 형태로 시각화**
 - (-) 늘 한 번에 많은 수의 Feature map들을 동시에 관찰하면서 각각이 커버하는 시각적 특징이 무엇인지 추정해야 한다는 단점
