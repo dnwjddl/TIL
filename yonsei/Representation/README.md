@@ -32,5 +32,10 @@
 
 하나의 컨볼루션 layer을 관찰 대상으로 고정해 놓고, 데이터 상의 이미지들을 하나씩 이볅하여 이들 각각에 대한 feature map을 산출한 뒤, 여기에 ```Dimensionality Reduction```방법을 적용하여 2D 또는 3D feature space 상의 점으로 도시할 수 있음  
 
+![image](https://user-images.githubusercontent.com/72767245/163310119-9e864250-8430-41e0-8a5e-c75cb2075d02.png)
 
 
+- DataVisualization을 위한 ```Dimensionality Reduction``` 방법
+  - PCA(principal component analysis)
+  - t-SNE(t-distributed stochastic neighbor embedding)
+  - UMAP(uniform mainfold approximation and projection
