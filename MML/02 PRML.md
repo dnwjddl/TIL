@@ -1,5 +1,7 @@
 # 2.1 Binary Variables
 
+## Bernoulli Distribution
+
 랜덤 변수 $x$가 $x \in {0,1}$ 인 상황에서의 확률분포: $x=1$ (앞면)  $x=0$ (뒷면)  
 
 앞면이 나올 확률
@@ -23,6 +25,15 @@ $$
 E[x] = \mu  
 var[x] = \mu(1-\mu)
 $$
+
+## Binary Distribution
+
+
+# 2.2 Multinormial Variables
+```이항분포```는 2개의 가능한 변수 중 하나를 선택한 문제   
+```다항분포```는 K개의 가능성 중 하나를 선택하는 문제
+
+
 
 
 
