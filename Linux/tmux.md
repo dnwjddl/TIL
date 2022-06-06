@@ -179,4 +179,27 @@ setw synchronize-panes on
 
 
 
+---
 
+
+$ ctrl + b + d    # hide
+
+Panes(Split)
+- Panes는 한 윈도우에서 화면분할을 할 때 사용
+
+```
+# horizontal split
+#          |
+#     1    |    2
+#          |
+$ ctrl + b + %
+
+# vertical split
+#           1
+# ---------------------
+#           2
+$ ctrl + b + "
+
+
+
+````
